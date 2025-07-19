@@ -45,3 +45,26 @@ With activated environment:
 ```commandline
 python visualize.py <input_points>_good.txt
 ```
+
+## Quick Start with Scripts
+Instead of running all steps manually, you can use the provided automation scripts:  
+
+### On Linux/macOS
+Use the shell script:  
+
+```bash
+./build_and_run.sh points.txt planes.txt
+```
+
+This script:    
+- Builds the C++ project
+- Sets up a Python virtual environment
+- Runs the filter
+- Visualizes the filtered points
+
+### On Windows
+
+Use the batch script in Command Prompt:  
+```commandline
+build_and_run.bat points.txt planes.txt
+```
